@@ -1,62 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en-ca">
+  <head>
+    <title>Ryan Shirazi - Portfolio</title>
+    <meta charset="utf-8">
+  </head>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
+      display: flex;
     }
-
-    h2 {
-      margin-top: 40px;
-    }
-
-    #Table {
+    #toc {
       position: fixed;
-      top: 20px;
       left: 20px;
-      background-color: #ffd1fc;
+      top: 20px;
+      bottom: 20px;
+      background-color: #EDF7F6;
       border: 1px solid #ddd;
       padding: 10px;
       border-radius: 5px;
     }
 
-    #Table a {
+    #toc a {
       display: block;
       margin-bottom: 10px;
       text-decoration: none;
       color: #333;
     }
 
-    #Table a:hover {
-      color: #0066cc;
+    #toc a:hover {
+      color: #2660A4;
+    }
+
+    #content {
+      margin-left: 200px;
+    }
+    
+    .circular-container {
+      width: 300px;
+      height: 300px;
+      background-image: url("IMG_0579 2.jpg");
+      /* Replace 'your-image.jpg' with the actual path to your image file */
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: 20px; /* Adjust the margin as needed */
+    }
+    
+    .text-container {
+      width: 700px;
+    }
+    
+
+    h2 {
+      margin-top: 40px;
     }
   </style>
-  <title>CSS Table of Contents</title>
-</head>
+ 
+
 <body>
-  <div id="Table">
+  <div id="toc">
     <h3>Table of Contents</h3>
     <ul>
       <li><a href="#section1">Section 1</a></li>
       <li><a href="#section2">Section 2</a></li>
       <li><a href="#section3">Section 3</a></li>
-      <li><a href="#section4">Section 4</a></li>
     </ul>
   </div>
 
-  <h2 id="section1">Section 1</h2>
-  <p>Content of Section 1...</p>
-  
-  <h2 id="section2">Section 2</h2>
-  <p>Content of Section 2...</p>
+  <div id="content">
+    <h1 id="section1">👋 Hi, I'm Ryan Shirazi</h1>
+    <div class="circular-image">
+    <div class="circular-container"></div>
+    </div>
+    
+    <div class="text-container">
+    I'm an undergrad student studying Global Business and Digital Art
+    at the University of Waterloo. This website will tell you a bit about myself and 
+    some of the projects I have worked on.
+    </div>
 
-  <h2 id="section3">Section 3</h2>
-  <p>Content of Section 3...</p>
-  
-   <h2 id="section4">Section 4</h2>
-  <p>Content of Section 4...</p>
+    <h2 id="section2">Section 2</h2>
+    <p>Content of Section 2...</p>
+
+    <h2 id="section3">Section 3</h2>
+    <p>Content of Section 3...</p>
+  </div>
 </body>
 </html>
