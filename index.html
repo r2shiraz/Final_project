@@ -1,91 +1,121 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-  <head>
+<head>
     <title>Ryan Shirazi - Portfolio</title>
     <meta charset="utf-8">
-  </head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      display: flex;
-    }
-    #toc {
-      position: fixed;
-      left: 20px;
-      top: 20px;
-      bottom: 20px;
-      background-color: #EDF7F6;
-      border: 1px solid #ddd;
-      padding: 10px;
-      border-radius: 5px;
-    }
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        display: flex;
+      }
+      h2 {
+        margin-top: 40px;
+      }
+      p {
+        width: 600px;
+      }
 
-    #toc a {
-      display: block;
-      margin-bottom: 10px;
-      text-decoration: none;
-      color: #333;
-    }
+      #toc {
+        position: fixed;
+        left: 20px;
+        top: 20px;
+        bottom: 20px;
+        background-color: #EDF7F6;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+      }
 
-    #toc a:hover {
-      color: #2660A4;
-    }
+      #toc a {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #333;
+      }
 
-    #content {
-      margin-left: 200px;
-    }
-    
-    .circular-container {
-      width: 300px;
-      height: 300px;
-      background-image: url("IMG_0579 2.jpg");
-      /* Replace 'your-image.jpg' with the actual path to your image file */
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-left: 20px; /* Adjust the margin as needed */
-    }
-    
-    .text-container {
-      width: 700px;
-    }
-    
+      #toc a:hover {
+        color: #2660A4;
+      }
 
-    h2 {
-      margin-top: 40px;
-    }
-  </style>
- 
+      #content {
+        margin-left: 200px;
+      }
 
+      .circular-container {
+        width: 300px;
+        height: 300px;
+        background-image: url("IMG_0579 2.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: 20px;   
+      }
+
+      .text-container {
+          
+        width: 450px;
+      }
+
+    </style>
+</head>
 <body>
-  <div id="toc">
-    <h3>Table of Contents</h3>
-    <ul>
-      <li><a href="#section1">Section 1</a></li>
-      <li><a href="#section2">Section 2</a></li>
-      <li><a href="#section3">Section 3</a></li>
-    </ul>
-  </div>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </div>
 
   <div id="content">
-    <h1 id="section1">👋 Hi, I'm Ryan Shirazi</h1>
-    <div class="circular-image">
+    <h1 id="introduction">👋 Hi, I'm Ryan Shirazi</h1>
     <div class="circular-container"></div>
-    </div>
-    
+    <br>
     <div class="text-container">
-    I'm an undergrad student studying Global Business and Digital Art
-    at the University of Waterloo. This website will tell you a bit about myself and 
-    some of the projects I have worked on.
+      I am a undergrad student at the University of Waterloo.     
+      I am studying Global Business and Digital Arts. 
+      This page will show some of my projects and some of my interests. 
     </div>
 
-    <h2 id="section2">Section 2</h2>
-    <p>Content of Section 2...</p>
+    <h2 id="education">Projects</h2>
+    <p>
+      Throughout university, I have been tasked into making several projects.
+      here are some of my most proud ones.
+    </p>
+    <h3>Group Project: Bird Fly</h3>
+    <img src="Bird Fly.png" alt="Bird Fly Image" width="500">
+    <p>
+      Bird Fly was a group project for CS105.
+      I was partnered with Caleb Hahm, and we were tasked with recreating a game.
+      The game we chose to recreate was Flappy Bird, as our "Bird Fly". 
+      The game was heavily inspired by the original game, but we also chose to make some creative differences such as a dynamic background.
+    </p>
+    <h2 id="hobbies">Hobbies &amp; Interests</h2>
+    <p>
+      To better introduce myself, I thought best to describe some of my hobbies and interests.
+    </p>
+    
+    <h3>Classical Music</h3>
+    <p>
+      I have a love for all music, but one of my favourite genres of music is classical and orchestral music. 
+      I listen to it more often than the other genres because it creates an atmosphere without causing a distraction.
+      The playlist below is one I've been curating since 2018.
+    </p>
+    <!--
+      Code copied from: spotify.com
+      Author: spotify.com
 
-    <h2 id="section3">Section 3</h2>
-    <p>Content of Section 3...</p>
+			Description: It's an embedded playlist of classical music I have curated. 
+				I wanted to make a link to the playlist myself but found the link to not work properly.
+			Date retrieved: Dec. 2, 2023
+		-->
+<!-- Copied code starts -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2HfBGnc90grE40s8iYWuYC?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+<!-- Copied code ends -->
   </div>
 </body>
 </html>
